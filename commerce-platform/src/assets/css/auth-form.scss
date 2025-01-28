@@ -1,0 +1,102 @@
+@import "variables";
+
+.auth-page-background {
+  padding-top: 100px;
+  height: 100%;
+  min-height: 100vh;
+  background: url(/img/authentication_background.jpg) center/cover no-repeat;
+}
+
+.form-container > .form > a {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.form-container .form span.error {
+  font-size: 12px;
+  color: #ff474c;
+  align-self: flex-start;
+}
+
+.form-container button {
+  border-radius: 20px;
+  border: 1px solid $website-color;
+  background-color: $website-color;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.form-container .form {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 35px;
+  text-align: center;
+}
+
+@media (min-height: 800px) {
+  .form-container .form {
+    height: 80vh;
+  }
+}
+
+.form-container input {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.overlay {
+  background: $website-color;
+  background: linear-gradient(to right, $website-color, lighten(adjust-hue($website-color, 1), 10%));
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+  height: 100%;
+  width: 100%;
+
+  > h1, > p {
+    padding: 15px;
+  }
+}
+
+.overlay h1 {
+  color: white;
+}
+
+.overlay-image {
+  background: url(/img/swain_logo_2.png) center/cover no-repeat;
+  height: 125px;
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social-container a {
+  border: 1px solid #DDDDDD;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}

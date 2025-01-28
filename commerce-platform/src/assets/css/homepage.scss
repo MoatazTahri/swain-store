@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "variables";
+
+.homepage-navbar-container .logo:hover {
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+.homepage-navbar-container .homepage-navbar {
+  height: 80px;
+  width: 75%;
+  margin: 50px auto auto;
+  transition: width 0.4s ease-in-out, margin 0.4s ease-in-out;
+}
+
+.homepage-navbar-container .homepage-navbar.scrolled {
+  width: 100%;
+  margin: 0 auto auto;
+}
+
+.homepage-navbar-container a:hover {
+  color: $website_color;
+}
+
+.homepage-background {
+  padding-top: 100px;
+  height: 100%;
+  min-height: 100vh;
+  background: url(/img/homepage-background.jpg) center/cover no-repeat;
+}
+
+.homepage-swiper .swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+.news-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-container button {
+  background-color: rgb(253, 136, 0);
+  border-radius: 5px;
+  font-size: 18px;
+  height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.news-container button:hover {
+  background-color: $website-color;
+  color: white;
+}
+
+.news-container .title {
+  max-width: 75%;
+  font-size: 56px;
+  letter-spacing: 2px;
+  line-height: normal;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #222222;
+}
+
+.news-container .content {
+  max-width: 75%;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: #656565;
+}
+
+.news-container .product-image {
+  height: 600px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7));
+}
